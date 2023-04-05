@@ -1,0 +1,213 @@
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/style.css ***!
+  \*********************************************************************/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	padding: 1rem;
+}
+
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/collapse.css ***!
+  \************************************************************************/
+.collapse-container {
+	outline: #efeceb solid .25rem;
+	padding: 1rem;
+}
+
+.collapse-container > *:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+.collapse-container .content {
+	max-height: 1000px;
+	overflow: hidden;
+	height: auto;
+	transition: max-height 1.5s ease-in-out;
+}
+
+.collapse-container .content.collapse {
+	max-height: 0;
+}
+
+.collapse-container .content p {
+	padding: 1rem;
+	border: solid 1px grey;
+	border-radius: .5rem;
+}
+
+.btn-collapse {
+	padding: .5rem;
+	border: #0a58ca 1px solid;
+	border-radius: .5rem;
+	background-color: inherit;
+	cursor: pointer;
+}
+
+.btn-collapse:hover {
+	outline: .25rem #0a58ca solid;
+}
+
+.copy-content {
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
+	color: #625f5e;
+}
+
+/*!********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/chat.css ***!
+  \********************************************************************/
+.chat-container {
+	margin: 2rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.chat *:not(:last-child) {
+	margin-bottom: .5rem;
+}
+
+.chat-show {
+	display: block;
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	border: none;
+	border-radius: 50%;
+	background-color: red;
+	cursor: pointer;
+	transform: scale(0);
+	transition: transform 250ms linear;
+}
+
+.chat-show.show:hover {
+	transform: scale(1.25);
+}
+
+.chat-show.show {
+	transform: scale(1);
+}
+
+.chat {
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	background-color: #fff;
+	padding: 1rem;
+	border-radius: .5rem;
+	box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.1);
+	transform: scale(0);
+	transition: transform 250ms linear;
+}
+
+.chat.show {
+	transform: scale(1);
+}
+
+.chat-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.chat-header .title {
+	font-family: Arial, serif;
+}
+
+.chat-header .chat-close {
+	background: url(08233535a9321b39bf5f.svg) no-repeat center;
+	background-size: contain;
+	width: 1rem;
+	border: none;
+	cursor: pointer;
+}
+
+.chat-body textarea {
+	border: solid 1px #e7e7e7;
+	border-radius: .5rem;
+	padding: .5rem;
+}
+
+.chat-body textarea:focus-visible {
+	box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+	outline: none;
+}
+
+.chat-footer button {
+	padding: .5rem;
+	width: 100%;
+	cursor: pointer;
+	border: none;
+	border-radius: .5rem;
+}
+
+.chat-footer button:hover {
+	box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+/*!********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/like.css ***!
+  \********************************************************************/
+.like-container {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn-like {
+	position: relative;
+	color: white;
+	padding: .5rem 2rem;
+	border: none;
+	border-radius: .5rem;
+	background-color: red;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+.btn-like:hover {
+	box-shadow: 0 0 10px 3px rgba(255, 0, 0, 0.5);
+}
+
+.btn-like:active {
+	animation-name: click;
+	animation-duration: 100ms;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+}
+
+.like {
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: url(be0d860e775accf30d67.png) no-repeat center;
+	background-size: contain;
+}
+
+@keyframes click {
+	from {
+		filter: grayscale(0);
+	}
+
+	to {
+		filter: grayscale(0.25);
+	}
+}
+
+
+/*# sourceMappingURL=index.css.map*/
