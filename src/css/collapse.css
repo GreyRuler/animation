@@ -1,0 +1,44 @@
+.collapse-container {
+	outline: #efeceb solid .25rem;
+	padding: 1rem;
+}
+
+.collapse-container > *:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+.collapse-container .content {
+	max-height: 1000px;
+	overflow: hidden;
+	height: auto;
+	transition: max-height 1.5s ease-in-out;
+}
+
+.collapse-container .content.collapse {
+	max-height: 0;
+}
+
+.collapse-container .content p {
+	padding: 1rem;
+	border: solid 1px grey;
+	border-radius: .5rem;
+}
+
+.btn-collapse {
+	padding: .5rem;
+	border: #0a58ca 1px solid;
+	border-radius: .5rem;
+	background-color: inherit;
+	cursor: pointer;
+}
+
+.btn-collapse:hover {
+	outline: .25rem #0a58ca solid;
+}
+
+.copy-content {
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
+	color: #625f5e;
+}
